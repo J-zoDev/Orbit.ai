@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit AI Portal</title>
+    <style>
+        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+
+    <iframe id="app"></iframe>
+
+    <script>
+        var WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxzTnwCv7cZshYQ-yMdt98axmuduCfoHj-BeySZX61vN4GkM11kwxC51DDK4nSU5R7HAg/exec";
+        
+        document.getElementById("app").src = WEB_APP_URL + window.location.search;
+    </script>
+
+</body>
+</html>
